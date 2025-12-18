@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Rizal Fadhli</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <img src="gambar/profil portfolio.jpeg" alt="Foto Rizal Fadhli" class="profile-img">
+            <h1>Rizal Fadhli</h1>
+            <p class="tagline">Mahasiswa Ilmu Perpustakaan dan Informasi Islam</p>
+            <p class="tagline">Universitas Islam Negeri Imam Bonjol Padang</p>
+            <p class="tagline">Tahun 2022</p>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+            Perkenalkan nama saya <strong>Rizal Fadhli</strong>, saya lahir pada
+            <strong>11 September 2003</strong> di Gadur, Kecamatan Enam Lingkung,
+            Kabupaten Padang Pariaman, Sumatera Barat.
+        </p>
+        <p>
+            Riwayat pendidikan saya yaitu <strong>MIN 03 Padang Pariaman</strong>,
+            <strong>MTsN 02 Padang Pariaman</strong>,
+            <strong>SMAN 01 Enam Lingkung Padang Pariaman</strong>, dan saat ini saya
+            sedang menempuh pendidikan di <strong>Universitas Islam Negeri Imam Bonjol Padang</strong>,
+            Program Studi <strong>Ilmu Perpustakaan dan Informasi Islam</strong>
+            Angkatan <strong>2022</strong>.
+        </p>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Skill Teknis</h3>
+                <ul>
+                    <li>Microsoft Word</li>
+                    <li>Microsoft Excel</li>
+                    <li>Desain Grafis</li>
+                    <li>Editing Foto & Video</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3>Skill Non-Teknis</h3>
+                <ul>
+                    <li>Kerja Sama Tim</li>
+                    <li>Berpikir Kritis</li>
+                    <li>Komunikasi yang Baik</li>
+                    <li>Tanggung Jawab & Etika Kerja</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+    <h2>Portfolio Akademik</h2>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-card">
+            <h3>Analisis Layanan Perpustakaan</h3>
+            <p>
+                Kajian akademik mengenai sistem layanan perpustakaan sebagai pusat
+                informasi, meliputi layanan sirkulasi, referensi, dan pemustaka.
+            </p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Pengolahan Koleksi Perpustakaan</h3>
+            <p>
+                Pemahaman dasar pengolahan bahan pustaka seperti inventarisasi,
+                klasifikasi, dan katalogisasi koleksi perpustakaan.
+            </p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Literasi Informasi</h3>
+            <p>
+                Penyusunan materi literasi informasi untuk membantu pengguna dalam
+                menemukan, mengevaluasi, dan memanfaatkan informasi secara efektif.
+            </p>
+        </div>
+
+        <div class="portfolio-card">
+            <h3>Website Portofolio Akademik</h3>
+            <p>
+                Website portofolio pribadi berbasis HTML, CSS, dan JavaScript sebagai
+                media penyampaian informasi akademik dan personal.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+
+        <ul class="contact-list">
+            <li><i class="fa-solid fa-envelope"></i> 
+                <a href="mailto:rizalfadhli2024@gmail.com">rizalfadhli2024@gmail.com</a>
+            </li>
+            <li><i class="fa-brands fa-instagram"></i> 
+                <a href="https://instagram.com/rzlfdhli__" target="_blank">@rzlfdhli__</a>
+            </li>
+            <li><i class="fa-brands fa-tiktok"></i> 
+                rizal fadhli
+            </li>
+            <li>
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/628XXXXXXXXXX" target="_blank">
+        +62 83136420890
+    </a>
+</li>
+
+        </ul>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2025 Rizal Fadhli. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // tampilkan home pertama kali
+        showSection('home');
+    </script>
+
+</body>
+</html>

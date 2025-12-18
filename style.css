@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00bcd4;
+}
+
+/* ===== SECTION CONTROL ===== */
+.section {
+    display: none;
+    padding: 80px 20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #00bcd4;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ===== SECTION TITLE ===== */
+section h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #00bcd4;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ===== ABOUT ===== */
+.about {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    background-color: #fff;
+}
+
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-box {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.skill-box h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+/* ===== PORTFOLIO ===== */
+.portfolio-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.portfolio-card {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    transform: translateY(-8px);
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    background-color: #111;
+    color: #fff;
+}
+
+.contact-list {
+    max-width: 600px;
+    margin: auto;
+    list-style: none;
+}
+
+.contact-list li {
+    margin-bottom: 20px;
+}
+
+.contact-list a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.contact-list i {
+    margin-right: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
